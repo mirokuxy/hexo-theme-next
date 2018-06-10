@@ -9,8 +9,8 @@ var merge = require('./merge');
 hexo.on('generateBefore', function () {
   if (hexo.locals.get) {
     var data = hexo.locals.get('data');
-    if ( data && data.next ) {
-      if ( data.next.override ) {
+    if (data && data.next) {
+      if (data.next.override) {
         hexo.theme.config = data.next;
       } else {
         merge(hexo.theme.config, data.next);
@@ -19,6 +19,7 @@ hexo.on('generateBefore', function () {
   }
 });
 
+/*
 hexo.on('generateAfter', function () {
   hexo.log.warn("===============================================================");
   hexo.log.warn("========================= ATTENTION! ==========================");
@@ -28,3 +29,4 @@ hexo.on('generateAfter', function () {
   hexo.log.warn(" It's rebase to v6.0.0 and future maintenance will resume there");
   hexo.log.warn("===============================================================");
 });
+*/
