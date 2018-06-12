@@ -27,15 +27,17 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  #small: /images/favicon-16x16-next.png
+  small: /images/favicon-16x16-me.png
+  #medium: /images/favicon-32x32-next.png
+  medium: /images/favicon-32x32-me.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords:
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -221,7 +223,7 @@ auto_excerpt:
 
 # Post meta display settings
 post_meta:
-  item_text: true
+  item_text: false
   created_at: true
   updated_at: false
   categories: true
